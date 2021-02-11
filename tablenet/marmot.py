@@ -87,6 +87,7 @@ class MarmotDataModule(pl.LightningDataModule):
             stage (Optional[str]): Used to separate setup logic for trainer.fit and trainer.test.
         """
         n_samples = len(self.data)
+        self.data.sort()
         train_slice = slice(0, int(n_samples * 0.8))
         val_slice = slice(int(n_samples * 0.8), int(n_samples * 0.9))
         test_slice = slice(int(n_samples * 0.9), n_samples)
