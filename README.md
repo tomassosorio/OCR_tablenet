@@ -14,12 +14,12 @@ To train is only needed the `train.py` file which can be configured as wanted.
 To predict, it can be used the pre-trained weights already available and should be downloaded on the following link: [TableNet Weights](https://drive.google.com/drive/folders/1YbdQQ3ZLjrltfu7yBm7G5uVt2RYkWLoM?usp=sharing)
 
 ```bash
- python predict.py --image_path=<image path>'
+ python predict.py --model_weights='<weights path>' --image_path='<image path>'
 ```
 
 or simply:
 ```bash
- python predict.py'
+ python predict.py
 ```
 
 To predict with the default image.
