@@ -1,6 +1,6 @@
 absl-py==0.11.0
 aiohttp==3.7.3
-albumentations==0.5.2
+albumentations>=0.5.1,<=0.5.2
 async-timeout==3.0.1
 attrs==20.3.0
 cachetools==4.2.1
